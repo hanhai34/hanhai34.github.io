@@ -115,6 +115,11 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
@@ -531,7 +536,7 @@
     ages = ages.replace(/minutes?/, "分");
     ages = ages.replace(/seconds?/, "秒");
     ages = ages.replace(/\d+/g, '<span style="color:#1890ff">$&</span>');
-    div.innerHTML = `我已在此等候你 ${ages}`;
+    div.innerHTML = `footer.age ${ages}`;
   }
   var div = document.createElement("div");
   //插入到copyright之后
